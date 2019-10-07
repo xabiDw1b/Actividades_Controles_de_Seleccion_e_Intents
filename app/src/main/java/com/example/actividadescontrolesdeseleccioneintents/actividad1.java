@@ -38,7 +38,7 @@ public class actividad1 extends AppCompatActivity {
 
                 if(position==0)
                 {
-                    textView.setText("Superficie: opu, y poblacion.....");
+                    textView.setText("Superficie: opui, y poblacion.....");
 
                 }
 
