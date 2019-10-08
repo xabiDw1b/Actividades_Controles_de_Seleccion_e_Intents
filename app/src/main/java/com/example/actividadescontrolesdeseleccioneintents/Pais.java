@@ -25,7 +25,7 @@ public class Pais extends AppCompatActivity {
 
     }
 
-    public int getSubtitulo(){
+    public int getPobla(){
         return poblacion;
     }
 
