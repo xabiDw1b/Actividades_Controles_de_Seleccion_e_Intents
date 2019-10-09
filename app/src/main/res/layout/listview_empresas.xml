@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp">
+
+    <TextView
+        android:id="@+id/TextViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-13dp" />
+
+
+    <ImageButton
+        android:id="@+id/Bgmail"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Mandar correo electonico"
+        android:src="@drawable/gmail"
+        android:layout_below="@id/TextViewNombre" />
+
+
+    <ImageButton
+        android:id="@+id/Bmaps"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Abrir en google maps"
+        android:src="@drawable/maps"
+        android:layout_below="@id/TextViewNombre"
+        android:layout_toRightOf="@id/Bgmail"/>
+
+
+    <ImageButton
+        android:id="@+id/BWeb"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Abrir pagina web"
+        android:src="@drawable/gmail"
+        android:layout_below="@id/TextViewNombre"
+        android:layout_toRightOf="@id/Bmaps"/>
+
+
+
+</RelativeLayout>
+

@@ -2,31 +2,39 @@ package com.example.actividadescontrolesdeseleccioneintents;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Web extends AppCompatActivity {
+public class Empresa extends AppCompatActivity {
 
-    private int ID;
     private String nombre;
+    private String Email;
+    private String coodenadas;
     private String URL;
     private String imagen;
 
 
-    public Web(int id,String nomb,String url, String image) {
+    public Empresa(String nomb,String email,String coord, String url, String image) {
 
-        ID=id;
+
         nombre = nomb;
+        Email=email;
+        coodenadas=coord;
         URL = url;
         imagen = image;
     }
 
 
-    public int getID()
-    {
-        return ID;
 
-    }
 
     public String getURL(){
         return URL;
+
+    }
+
+    public String getEmail(){
+        return Email;
+
+    }
+    public String getcoodenadasL(){
+        return coodenadas;
 
     }
 
