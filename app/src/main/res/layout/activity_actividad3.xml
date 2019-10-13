@@ -6,13 +6,115 @@
     android:layout_height="match_parent"
     android:layout_margin="10sp">
 
-
-    <ListView
-        android:id="@+id/listView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/amazon"/>
 
-    </ListView>
+
+
+    <TextView
+        android:id="@+id/TextViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/contacto"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/TextViewMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewNombre"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/ofi"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/Bmaps"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Mandar correo electonico"
+        android:src="@drawable/maps"
+        android:layout_below="@id/TextViewNombre"
+        android:layout_toRightOf="@id/TextViewMaps"/>
+
+    <TextView
+        android:id="@+id/TextViewWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bmaps"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/web"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/BWeb"
+        android:layout_marginTop="5dp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Abrir en google maps"
+        android:src="@drawable/w"
+        android:layout_below="@id/Bmaps"
+        android:layout_toRightOf="@id/TextViewMaps"/>
+
+
+    <TextView
+        android:id="@+id/TextViewCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BWeb"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/correo"
+        android:textSize="20dp" />
+
+
+
+    <EditText
+        android:id="@+id/editTextAsunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/TextViewCorreo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/asunto" />
+
+    <EditText
+        android:id="@+id/editTextMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/editTextAsunto"
+        android:ems="10"
+        android:hint="@string/mensaje"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/Bgmail"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editTextMensaje"
+        android:text="@string/enviar"
+        android:drawableLeft="@mipmap/gmail" />
+
+
 
 
 </RelativeLayout>

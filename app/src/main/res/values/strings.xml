@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Actividades Controles de Seleccion e Intents</string>
+    <string name="contacto">Contacto amazon:</string>
+    <string name="ofi">Oficinas:</string>
+    <string name="web">Web:</string>
+    <string name="correo">Correo:</string>
+    <string name="mensaje">Escriba el mensaje...</string>
+    <string name="asunto">Asunto</string>
+    <string name="enviar">Enviar</string>
 </resources>
